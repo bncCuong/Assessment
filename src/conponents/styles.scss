@@ -1,0 +1,103 @@
+.login,
+.profile {
+  width: 50%;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding-inline: 30px;
+  padding-top: 50px;
+
+  .user-email {
+    margin: 20px 0;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.form-profile {
+  margin-top: 20px;
+}
+.title {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  .login-label {
+    color: var(--primary-color);
+  }
+
+  .profile-label {
+    color: var(--input-color);
+  }
+}
+.input {
+  max-width: 450px;
+  height: 50px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid var(--input-color);
+  padding: 4px 8px;
+  font-size: 16px;
+  &::placeholder {
+    color: var(--input-color);
+  }
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: end;
+}
+
+.btn-action {
+  display: flex;
+  flex-direction: row-reverse;
+
+  margin-bottom: 10px;
+}
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+}
+
+.signup-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 930px) {
+  .login,
+  .profile {
+    width: 100%;
+  }
+
+  .login {
+    height: 500px;
+  }
+  .title {
+    margin-top: 10px;
+  }
+
+  .input {
+    max-width: 100%;
+  }
+}

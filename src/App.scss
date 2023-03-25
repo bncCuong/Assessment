@@ -1,0 +1,29 @@
+#root {
+ --primary-color: #2e09db;
+ --input-color: #d2d3d6;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 80%;
+        height: fit-content;
+        background-color: var(--input-color);
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+        padding: 30px
+      }
+}
+
+
+@media (max-width: 930px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
